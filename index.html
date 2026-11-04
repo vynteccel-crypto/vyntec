@@ -266,6 +266,49 @@ h2 {
   text-decoration: underline;
 }
 
+/* Banners / Mascotes Temáticos */
+.section-banner-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.banner-mascote-img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(30, 107, 255, 0.25);
+  display: block;
+}
+
+/* Destaque Games com Mascote Gamer */
+.game-featured-banner {
+  margin-top: 36px;
+  background: linear-gradient(135deg, #050d24 0%, #0a1a40 100%);
+  border-radius: 18px;
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid #16306b;
+  box-shadow: 0 10px 30px rgba(5, 13, 36, 0.25);
+}
+
+.game-featured-banner .banner-text h3 {
+  color: var(--cyan);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.game-featured-banner .banner-text p {
+  color: #b9c6e4;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+
 /* TV & Multimídia */
 .tvm {
   background: var(--soft);
@@ -341,7 +384,6 @@ h2 {
   margin: 0 auto 36px;
 }
 
-/* Logo do Gerador Pro */
 #logo-gerador-pro {
   display: block;
   max-width: 250px;
@@ -402,7 +444,6 @@ h2 {
   width: 100%;
 }
 
-/* Ajuste do container e do vídeo para não cortar nenhuma parte */
 .video-wrapper {
   width: 100%;
   border-radius: 10px;
@@ -419,7 +460,7 @@ h2 {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain; /* Mostra o vídeo 100% visível sem cortes */
+  object-fit: contain;
   background: #000;
 }
 
@@ -758,6 +799,15 @@ footer p {
   .loc .wrap {
     grid-template-columns: 1fr;
   }
+  .section-banner-flex,
+  .game-featured-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-mascote-img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
   .grid,
   .tvm .grid.four,
   .gerador-grid,
@@ -848,10 +898,27 @@ footer p {
         <a href="https://wa.me/5519989569307?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20sistemas%20PDV%20para%20o%20meu%20com%C3%A9rcio." target="_blank" rel="noopener">Pedir orçamento</a>
       </article>
     </div>
+
+    <!-- Banner Destaque Especial Videogames com Mascote Gamer -->
+    <div class="game-featured-banner">
+      <div class="banner-text">
+        <h3>Especialista em Games &amp; Consoles</h3>
+        <p>Limpeza profissional, troca de pasta térmica e reparos em placas de PlayStation, Xbox e Nintendo Switch.</p>
+        <a class="btn blue" href="https://wa.me/5519989569307?text=Ol%C3%A1!%20Quero%20uma%20revis%C3%A3o%20completa%20no%20meu%20videogame." target="_blank" rel="noopener">Falar com especialista gamer</a>
+      </div>
+      <img class="banner-mascote-img" src="mascote-gamer.png" alt="Mascote Gamer VYNTEC">
+    </div>
   </div></section>
 
   <section class="tvm" id="tv-multimidia"><div class="wrap">
-    <h2>TV &amp; Multimídia</h2>
+    <div class="section-banner-flex">
+      <div>
+        <h2>TV &amp; Multimídia</h2>
+        <p class="sub" style="margin-bottom:0">Configuração completa e estabilidade para os seus momentos de entretenimento.</p>
+      </div>
+      <img class="banner-mascote-img" src="mascote-tv.png" alt="Mascote TV e Multimídia VYNTEC">
+    </div>
+
     <div class="grid four">
       <article class="card">
         <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
@@ -918,7 +985,6 @@ footer p {
   <!-- ===== Seção Gerador Pro ===== -->
   <section class="gerador-pro-section" id="gerador-pro"><div class="wrap">
     <div class="gerador-header">
-      <!-- Imagem do Logo Gerador Pro com Fundo Transparente -->
       <img id="logo-gerador-pro" src="logo-gerador-pro.png" alt="Gerador Pro">
       <h2>Gerador Pro – Automação e Gestão</h2>
       <p>Banners profissionais gerados em segundos para jogos, esportes, filmes e redes sociais, com seu logotipo e telefone integrados automaticamente.</p>
