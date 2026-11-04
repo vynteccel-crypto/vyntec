@@ -267,14 +267,6 @@ h2 {
 }
 
 /* Banners / Mascotes Temáticos */
-.section-banner-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
 .banner-mascote-img {
   width: 100%;
   max-width: 220px;
@@ -283,8 +275,8 @@ h2 {
   display: block;
 }
 
-/* Destaque Games com Mascote Gamer */
-.game-featured-banner {
+/* Destaque Temático Escuro (Games e TV) */
+.themed-featured-banner {
   margin-top: 36px;
   background: linear-gradient(135deg, #050d24 0%, #0a1a40 100%);
   border-radius: 18px;
@@ -297,13 +289,13 @@ h2 {
   box-shadow: 0 10px 30px rgba(5, 13, 36, 0.25);
 }
 
-.game-featured-banner .banner-text h3 {
+.themed-featured-banner .banner-text h3 {
   color: var(--cyan);
   font-size: 26px;
   margin-bottom: 8px;
 }
 
-.game-featured-banner .banner-text p {
+.themed-featured-banner .banner-text p {
   color: #b9c6e4;
   margin: 0 0 18px;
   font-size: 16px;
@@ -404,7 +396,7 @@ h2 {
 
 .teste-gratis-box {
   margin: 24px auto 0;
-  background: rgba(25, 200, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08);
   border: 1.5px solid var(--cyan);
   border-radius: 14px;
   padding: 22px;
@@ -799,8 +791,7 @@ footer p {
   .loc .wrap {
     grid-template-columns: 1fr;
   }
-  .section-banner-flex,
-  .game-featured-banner {
+  .themed-featured-banner {
     flex-direction: column;
     text-align: center;
   }
@@ -900,7 +891,7 @@ footer p {
     </div>
 
     <!-- Banner Destaque Especial Videogames com Mascote Gamer -->
-    <div class="game-featured-banner">
+    <div class="themed-featured-banner">
       <div class="banner-text">
         <h3>Especialista em Games &amp; Consoles</h3>
         <p>Limpeza profissional, troca de pasta térmica e reparos em placas de PlayStation, Xbox e Nintendo Switch.</p>
@@ -911,10 +902,12 @@ footer p {
   </div></section>
 
   <section class="tvm" id="tv-multimidia"><div class="wrap">
-    <div class="section-banner-flex">
-      <div>
-        <h2>TV &amp; Multimídia</h2>
-        <p class="sub" style="margin-bottom:0">Configuração completa e estabilidade para os seus momentos de entretenimento.</p>
+    <!-- Banner Destaque Especial TV & Multimídia com Mascote TV -->
+    <div class="themed-featured-banner" style="margin-top: 0; margin-bottom: 36px;">
+      <div class="banner-text">
+        <h3>Especialista em TV &amp; Streaming</h3>
+        <p>Configuração completa e estabilidade para os seus momentos de entretenimento. Suporte especializado em streaming e redes.</p>
+        <a class="btn blue" href="https://wa.me/5519989569307?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20servi%C3%A7o%20de%20TV%20e%20Multim%C3%ADdia." target="_blank" rel="noopener">Falar com especialista em TV</a>
       </div>
       <img class="banner-mascote-img" src="mascote-tv.png" alt="Mascote TV e Multimídia VYNTEC">
     </div>
