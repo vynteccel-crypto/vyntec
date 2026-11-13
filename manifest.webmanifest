@@ -1,0 +1,26 @@
+{
+  "name": "VYNTEC - Assistência Técnica e Tecnologia",
+  "short_name": "VYNTEC",
+  "description": "Assistência técnica e tecnologia em Sumaré/SP",
+  "lang": "pt-BR",
+  "start_url": "/vyntec/",
+  "scope": "/vyntec/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1630",
+  "theme_color": "#0b1630",
+  "icons": [
+    {
+      "src": "icone-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icone-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
