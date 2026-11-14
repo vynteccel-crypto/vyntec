@@ -140,6 +140,36 @@ header.top .wrap {
   display: block;
 }
 
+/* Pulso de luz azul no logo VYNTEC */
+#logo-vyntec {
+  animation: vyntec-pulso 4s ease-out infinite;
+  will-change: filter;
+}
+
+@keyframes vyntec-pulso {
+  0% {
+    filter: brightness(1.15)
+      drop-shadow(0 0 1.5px rgba(25, 200, 255, 0.95))
+      drop-shadow(0 0 4px rgba(25, 200, 255, 0.80));
+  }
+  50% {
+    filter: brightness(1.05)
+      drop-shadow(0 0 5px rgba(25, 200, 255, 0.40))
+      drop-shadow(0 0 8px rgba(25, 200, 255, 0.20));
+  }
+  100% {
+    filter: brightness(1)
+      drop-shadow(0 0 6px rgba(25, 200, 255, 0))
+      drop-shadow(0 0 10px rgba(25, 200, 255, 0));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #logo-vyntec {
+    animation: none;
+  }
+}
+
 nav ul {
   display: flex;
   gap: 24px;
